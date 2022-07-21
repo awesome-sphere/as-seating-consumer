@@ -1,0 +1,16 @@
+name: Build as-seating-consumer CI
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  build-consumer:
+    runs-on: ubuntu-latest
+    name: Building as-seating consumer
+    steps:
+      - uses: actions/checkout@v3
+      - id: foo
+        uses: actions/as-ci-cd-template@v1
+        with:
+          repo: as-seating-consumer
