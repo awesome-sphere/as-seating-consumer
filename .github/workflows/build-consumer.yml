@@ -14,3 +14,6 @@ jobs:
         uses: awesome-sphere/as-ci-cd-template@v1
         with:
           repo: as-seating-consumer
+          token: ${{ secrets.GITHUB_TOKEN }}
+          REGISTRY: ghcr.io
+          BASE_IMG_NAME: ${{ github.repository }}
