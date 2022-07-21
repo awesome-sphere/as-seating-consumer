@@ -11,6 +11,6 @@ FROM alpine:latest as production-stage
 RUN apk --no-cache add ca-certificates
 
 COPY --from=build-stage /go/src/as-seating-consumer /as-seating-consumer
-WORKDIR /as-seating
+WORKDIR /as-seating-consumer
 
 ENTRYPOINT ["./as-seating-consumer"]

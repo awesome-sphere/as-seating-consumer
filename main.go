@@ -11,4 +11,6 @@ func main() {
 	redis.InitializeRedisConn()
 	log.Println("Starting kafka...")
 	kafka.InitKafkaTopic()
+	for {
+	}
 }

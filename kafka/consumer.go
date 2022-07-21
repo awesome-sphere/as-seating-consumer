@@ -54,6 +54,4 @@ func ReadMessage(topic_name string) {
 	for _, reader := range readers {
 		go readFromReader(reader)
 	}
-	for {
-	}
 }
